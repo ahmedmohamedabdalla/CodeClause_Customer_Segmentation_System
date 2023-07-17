@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Style.css">
+        
+<style>
+
+body{
+    
+}
+
+    .result{
+    margin-left:450px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width:500px; 
+    padding-bottom: 80px;
+    background-color: #f5f5f5;
+    padding: 10px;
+    border: 1px solid #ccc;
+     border-radius: 5px;
+ 
+    height: auto;
+   
+}
+.result ul{
+    list-style-type: none;
+    margin-top: 100px;
+    line-height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.output{
+    width: 620px;
+    height: 90px;
+    margin-top: 10px;
+    margin-left: 400px;
+    box-shadow: 0 2px 16px rgba(145, 145, 157, 0.6);
+    background:  #dfe3ee;
+    padding: 10px 15px 10px 15px;
+    border-radius: 8px;
+    border:none;
+    font-size: large;
+      }
+      .result h3{
+        text-align: center;
+        margin-top: -60px;
+        margin-left: -5px;
+        font-size:30px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      .gender ,.age ,.annual,.score{
+        width: 120px;
+       height: 50px;
+      margin-top: 10px;
+      margin-left: 10px;
+      box-shadow: 0 2px 16px rgba(145, 145, 157, 0.6);
+      background:  #dfe3ee;
+      padding: 20px 0px 5px 15px;
+      border-radius: 8px;
+      border:none;
+      font-size: large;
+      font-weight: bold;
+      }
+
+.result button {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 16px;
+  margin-left: 10px;
+  cursor: default;
+}
+
+.result button:hover {
+  background-color: #ccc;
+}
+    </style>
+        <title>Customer Segmentation</title>
+     </head>
+      
+<body>
+
+    <div class="result">
+        <ul>
+            <h3>The Input Information Is</h3>
+            <li>Gender:</li> <button type="button" class="gender"  >{{ Gender }}</button>
+            <li>Age:</li> <button type="button" class="age"  >{{ Age }}</button>
+            <li>Annual Income:</li> <button type="button" class="annual"  >{{ Annual_Income }}</button>
+            <li>Spending Score:</li> <button type="button" class="score"  >{{ Spending_Score }}</button>
+        </ul>
+    </div>
+    <button type="button" class="output"  >{{ prediction_text }}</button>
+</body>
+<script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const inputValue = urlParams.get('inputValue');
+    console.log('The value of the input tag is:', inputValue);
+  </script>
+</html> 

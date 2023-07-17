@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Style.css">
+        
+<style>
+
+#h3{
+    margin-left: 220px;
+    margin-top: 10px;
+    padding-top: 35px;
+    font-size: 30px;  
+}
+
+.logo{
+    width: 200px;
+    height: 100px;
+    margin-right: 0px;
+    margin-top: -99px;
+    float: left;
+    position: relative;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.6);
+    animation-name: rotate;
+    animation-duration: 5s;
+    border-radius: 10px;
+    transition: margin 5s;
+}
+.logo:hover{
+  margin-top: 5px;
+}
+@keyframes rotate {
+  0%   {    transform: rotate(0deg);}
+
+  100% {    transform: rotate(360deg);}
+}
+
+
+body{
+    margin-top: 50px;
+    background-color: #fefffc;
+    
+   
+}
+label{
+    display: block;
+    padding-top: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    }
+.formContent {
+    color: azure;
+    position: relative;
+    margin: 4% auto;
+    height: 620px;
+    width: 50%;
+    box-shadow: 0 4px 16px rgba(5, 0, 0, 0.6);
+    background-color: rgb(55, 65, 89);
+    background-image: url("https://a3td.net/wp-content/uploads/2019/07/1340-1.jpg");
+    padding: 10px 0px 5px 40px;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+.formInput {
+    display: block;
+    margin: 10px 30px 15px 30px;
+    padding: 4px;
+    width: 60%;
+    height: 40px;
+    box-sizing: border-box;
+    border-color: black;
+    font-size: 12px;
+    border-radius: 8px;
+}
+.btn{
+    display: inline;
+    width: 250px;
+    height: 50px;
+    padding: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 13px;
+    margin-left: 80px;
+    cursor: pointer;
+    background-color: #ffe01b;
+    border-radius: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    transition: margin 0.3s;
+}
+    
+.btn:hover{
+        cursor: pointer;
+        background-color: #8AAAE5;
+        margin-top: 5px;
+    
+    }
+
+.footer{
+    background-color:rgba(55, 65, 89, 0.818);
+    width:100%;
+    height: 100px;
+    margin-top: 10px;
+    color: azure;
+   font-size: 18px;
+   padding-left: 8px;
+}
+.footer h4{
+    margin-left: 5px;
+    padding-top: 8px;
+    color: azure;
+}
+.footer p{
+    margin-top: -7px;
+}
+.developer{
+float:right;
+margin-right: 10px;
+padding-bottom: 5px;
+color: black;
+
+}
+.data{
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-left: 10px;
+    line-height: 25px;
+    color:black;
+	margin-left: 35px;
+}
+select{
+    display: block;
+    margin: 10px 30px 15px 30px;
+    padding: 4px;
+    width: 60%;
+    height: 40px;
+    box-sizing: border-box;
+    border-color: black;
+    font-size:20px;
+    font-weight:20px;
+    border-radius: 6px;
+}
+.option{
+    font-size:20px;
+    font-weight:20px;
+}
+#Customers{
+    margin-left:135px;
+    padding-top: 55px;
+    padding-bottom: 15px;
+}
+input[type="text"]
+{
+    font-size:15px;
+}
+
+.about{
+  display: flex;
+  align-items: center;
+  margin: 100px 20px 100px 20px;
+  padding: 20px;
+  border: 3px solid #ccccccfa;
+  border-radius: 10px;
+  font-size: 25px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.right_image{
+ width: 650px;
+  height: 420px;
+  margin-right: 2px;
+  border-radius:8px;
+  object-fit: cover;
+}
+/* Style the header links */
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-weight: 110;
+  font-size: 23px;
+  line-height: 25px;
+  border-radius: 4px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  
+}
+
+/* Change the background color on mouse-over */
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+  border: 1px solid black;
+}
+
+/* Style the active/current link*/
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+/* Float the link section to the right */
+.header-right {
+  
+  float: right;
+  margin-top: -70px;
+  margin-right: 5px;
+}
+.spain{
+    font-size: xx-large;
+    color: #29c234;
+    margin-right: 2px solid black;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.as{
+    border-left: 2px solid black;
+}
+.as{
+    padding-left: 10px;
+}
+</style>
+        <title>Customer Segmentation</title>
+     </head>
+      
+<body>
+
+<div class="header">
+
+     <h3 id="h3">Customers Segmentation System</h3> 
+      <img class='logo' src="data:image/png;base64,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" alt="">
+      <div class="header-right">
+        <a  class="active" href="#Home">Home</a>
+        <a  href="#formContent">Segment</a>
+        <a href="#About">About</a>
+      </div>
+   
+      
+    </div>
+
+<div class="about">
+    <span class="spain">To make segmentation must click segment.</span><br>
+    <p class="as">
+        
+        <b>Segmentation</b> is the process of dividing a company's customer base into groups of individuals who have similar characteristics or behaviors.<br>
+       
+    </p>      
+    <img class="right_image" src="https://png.pngtree.com/thumb_back/fw800/background/20220314/pngtree-market-segmentation-and-customer-care-image_1048390.jpg" alt=""> 
+</div>
+<div class="formContent" id="formContent">
+ <form id="Customers" action="{{ url_for('predict')}}" method="post">
+     <label>Gender</label>
+
+	 <select>
+	   <option>
+	        <option value="1" class='option'>Male
+	        <option value="2" class='option'>Female
+	        <option value="3" class='option'>I don't want
+	 </select>
+     
+	 <label>Age</label>
+     <input type="text" class="formInput" name="x_0" placeholder="Enter Age" autocomplete="off" required="required">
+     <label>Annual Income</label>
+     <input type="text" class="formInput" name="x_1" placeholder="Enter Annual Income" autocomplete="off" required="required">
+     <label>Spending Score</label>
+     <input type="text" class="formInput" name="x_2" placeholder="Enter Spending Score" autocomplete="off" required="required">
+     
+     <button type="submit" class="btn" id="out" onclick="location.href = 'result.html';"> Segment the Customer</button>
+
+    </form>
+    
+  </div>
+
+<div class="footer" id="About">
+<h4>About Website</h4>
+<p>This site is used to segment customers based on Annual Income and Spending Score.<br>
+The prediction results for customers have been divided into 5 categories which are generated based on the trained data.<br>
+</p>
+    <h5 class="developer">&copy Ahmed M.Abdallah</h5>
+
+</div>
+</body>
+</html> 
